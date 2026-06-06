@@ -7,10 +7,16 @@ This folder contains a Streamlit demo for the trained WELFake fake news classifi
 From the project root:
 
 ```bash
-streamlit run app/app.py
+streamlit run app.py
 ```
 
-The app loads `saved_models/tuned_logistic_regression_tfidf.pkl` by default. If that file is missing, it falls back to `saved_models/logistic_tfidf_lr.joblib` and `saved_models/tfidf_vectorizer.joblib`.
+The app loads `saved_models/cnn_fake_news_model.keras` and `saved_models/deep_learning_tokenizer.pkl` when TensorFlow is installed. For Streamlit deployment, the required dependency set uses the smaller scikit-learn fallback model at `saved_models/logistic_regression_tfidf.pkl`.
+
+For local CNN inference, install TensorFlow separately:
+
+```bash
+pip install tensorflow
+```
 
 ## Features
 

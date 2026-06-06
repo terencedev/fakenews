@@ -9,7 +9,7 @@ import streamlit as st
 
 
 APP_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = APP_DIR.parent
+PROJECT_ROOT = APP_DIR
 MODEL_PATH = PROJECT_ROOT / "saved_models" / "logistic_regression_tfidf.pkl"
 FALLBACK_MODEL_PATH = PROJECT_ROOT / "saved_models" / "logistic_tfidf_lr.joblib"
 VECTORIZER_PATH = PROJECT_ROOT / "saved_models" / "tfidf_vectorizer.joblib"
